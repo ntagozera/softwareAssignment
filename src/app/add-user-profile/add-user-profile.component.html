@@ -1,0 +1,99 @@
+
+<div class="container-fluid ps-md-0">
+    <div class="row g-0">
+      <div class="d-none d-md-flex col-md-4 col-lg-4 bg-image"></div>
+      <div class="col-md-8 col-lg-6">
+        <div class="login d-flex align-items-center py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-9 col-lg-8 mx-auto">
+                <h3 class="login-heading mb-4">Add Profile Here!</h3>
+  
+                <!-- Add Profile Form -->
+                <form >
+                    <div class="form-floating mb-3">
+                        <input type="file" class="form-control" name="email" id="inputEmail4">
+                        <div  class="invalid-feedback">
+                            <div >Image is required</div>
+                        </div> 
+                        <label for="image">Profile photo</label>
+                    </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="firstName" class="form-control" name="firstName" id="firstName">
+                    <div  class="invalid-feedback">
+                        <div >Name is required</div>
+                    </div> 
+                    <label for="firstName">First Name</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="lastName" class="form-control" name="firstName" id="lastName">
+                    <div  class="invalid-feedback">
+                        <div >Name is required</div>
+                    </div> 
+                    <label for="lastName">Last Name</label>
+                  </div>
+
+                  <div class="radio" *ngFor="let gender of genders">
+                    <label>
+                      <input type="radio"
+                        name="gender"
+                        ngModel
+                        [value]="gender"
+                        required>
+                        {{gender}}
+                    </label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="number" class="form-control" name="age" id="age">
+                    <div  class="invalid-feedback">
+                        <div >Age is required</div>
+                    </div> 
+                    <label for="age">Age</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="date" class="form-control" name="dateOfBirth" id="dateOfBirth">
+                    <div  class="invalid-feedback">
+                        <div >Date is required</div>
+                    </div> 
+                    <label for="dateOfBirth">Date of Birth</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <select
+                        id="maritalStatus" 
+                        class="form-control"
+                        name="maritalStatus">
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                        <option value="widowed">Widowed</option>
+                    </select>
+                    <div  class="invalid-feedback">
+                        <div >Marital Status is required</div>
+                    </div> 
+                    <label for="maritalStatus">Marital status</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control"  name="nationality" id="nationality">
+                    <div  class="invalid-feedback">
+                        <div >Nationality is required</div>
+                    </div> 
+                    <label for="nationality">Nationality</label>
+                  </div>
+
+                  <div class="d-grid">
+                    <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">Update</button>
+                  </div>
+  
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

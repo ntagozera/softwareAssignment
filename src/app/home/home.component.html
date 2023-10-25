@@ -1,0 +1,55 @@
+<!-- <div class="background">
+  Content goes here 
+    <div class="centered-content">
+        <div><h2>Welcome to ZPlatform</h2></div>
+        
+        <div class="profile">
+            <div class="profile-photo">
+                <img src="https://cdn.pixabay.com/photo/2012/04/26/19/43/profile-42914_640.png" style="height: 200px;">
+            </div>
+            <div class="personal-info">
+                <label for="email" style="font-size: large; "> Email : ntagozeraraoul@gmail.com </label>
+            </div>
+            <div class=" bottons" style="margin: 3px;">
+                <span style="color: blue;">Click here to LogOut</span> 
+                <button class="btn btn-primary" (click)="logout()" type="button">Logout</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="container-fluid ps-md-0">
+    <div class="row g-0">
+      <div class="d-none d-md-flex col-md-4 col-lg-4 bg-image"></div>
+        <div class="col-md-8 col-lg-8">
+         <div class="home d-flex ">
+            <div class="container h-100">
+                <div class="row h-100 d-m-flex justify-content-center align-items-center">
+                  <div class="col-12 col-md-6 d-flex col-lg-8 ">
+                    <div class="centered-div">
+                      <!-- Your content goes here -->
+                      <div class="title" style="font-size: large; margin-top: 10px;">Welcome to ZPlatform</div>
+                      <div class="profilepic">
+                        <img src="https://cdn.pixabay.com/photo/2012/04/26/19/43/profile-42914_640.png" style="height: 200px; margin-top: 20px;" alt="">
+                      </div>
+                      <div class="info">
+                        <label style="margin-top: 20px; font-size: large; ">Your Email:</label><br>
+                        <span style="margin-top: 30px; font-size: larger; font-family: Times New Roman">{{email}}</span>
+                      </div>
+                      <div style="margin-top: 30px; font-size: larger; font-family: Verdana;">
+                        <label>Thank You for Join ZPlatform!</label> 
+                      </div>
+                      <div class="button" style="margin-top: 30px;">
+                        <button class="btn  btn-primary btn-login text-uppercase fw-bold mb-2" routerLink="/AddProfile" type="button">
+                            Change Profile
+                        </button>
+                        <button class="btn  btn-primary btn-login text-uppercase fw-bold mb-2" (click)="logout()" type="button">Logout</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div> 
+    </div>
+</div>

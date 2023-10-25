@@ -1,0 +1,48 @@
+<div class="container-fluid ps-md-0">
+    <div class="row g-0">
+      <div class="d-none d-md-flex col-md-4 col-lg-4 bg-image"></div>
+      <div class="col-md-8 col-lg-6">
+        <div class="login d-flex align-items-center py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-9 col-lg-8 mx-auto">
+                <h3 class="login-heading mb-4">Sign UP Here!</h3>
+  
+                <!-- Sign Up Form -->
+                <form>
+                  <div class="form-floating mb-3"  >
+                    <input type="email" class="form-control"name="email" id="email" [(ngModel)]="email" required email>
+                    <!-- <span *ngIf="!email.valid && email.touched" class="help-block text-danger">Please Email is Required</span> -->
+                    <label for="floatingInput">Email address</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" name="password"  id="password" [(ngModel)]="password">
+                    <!-- <span *ngIf="(password.touched || f.submitted) && password.errors?.['required']" class="help-block text-danger">Please Password is Required</span>
+                    <span *ngIf="(password.touched || f.submitted) && password.errors?.['pattern']" class="help-block text-danger">Please Password is Required</span> -->
+                    <label for="firstName">Password</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" name="confirmPassword" id="confirmPassword">
+                    <div  class="invalid-feedback">
+                        <div>Confirmation Password is required</div>
+                    </div> 
+                    <label for="lastName">Confirmation Password</label>
+                  </div>
+
+                  <div class="d-grid">
+                    <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" (click)="register()" type="button">Sign Up</button>
+                    <div class="text-center">
+                      <a class="small" routerLink="/login">Have an Account?</a>
+                    </div>
+                  </div>
+  
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

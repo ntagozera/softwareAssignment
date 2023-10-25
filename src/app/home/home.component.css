@@ -1,0 +1,29 @@
+.bg-image {
+  background-image: url('https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg');
+  background-size:cover;
+  background-position: center;
+}
+.home {
+  min-height: 100vh;
+}
+
+.login-heading {
+  font-weight: 300;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 0rem;
+  width: 150px;
+  margin: 10px;
+}
+.centered-div {
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 900px;        /* Set the desired width */
+  height: 700px;       /* Set the desired height */
+  background-color: #f0f0f0; /* Set the background color if needed */
+}
