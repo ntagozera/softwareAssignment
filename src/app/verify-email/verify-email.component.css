@@ -1,14 +1,4 @@
-/* Style for the full-screen background */
-.background {
-    background-image: url('https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+
   /* Style for the centered content */
   .centered-content {
     display: flex;
@@ -21,25 +11,3 @@
     height: 60%;
     border-radius: 10px;
   }
-  .profile{
-    margin-top: 20px;
-    width: 80%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  }
-  .profile-photo{
-    display: flex;
-  }
-.personal-info{
-    margin-top: 20px;
-    width: 80%;
-}
-.bottons{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 80%;
-    flex-direction: column;
-}

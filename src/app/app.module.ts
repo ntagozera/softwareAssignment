@@ -15,7 +15,6 @@ import { environment } from 'src/environments/environment';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -31,7 +30,6 @@ import { MatListModule } from '@angular/material/list';
     HomeComponent,
     ResetPasswordComponent,
     VerifyEmailComponent,
-    HeaderComponent
   ],
   imports: [
     BrowserModule,
